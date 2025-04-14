@@ -1,0 +1,20 @@
+{
+    "enabled": true,
+    "show_system_info": true,
+    "show_hardware_info": true,
+    "show_process_info": true,
+    "show_top_processes": true,
+    "custom_commands": ["#status", "#服务器状态"],
+    "log_commands": ["#log", "#日志"],
+    "system_log_commands": ["#syslog", "#系统日志"],
+    "log_file_path": "logs/chatgpt.log",
+    "system_log_paths": [
+        "/var/log/syslog",
+        "/var/log/messages",
+        "/var/log/system.log",
+        "/www/wwwlogs/error.log"
+    ],
+    "log_lines": 10,
+    "max_log_lines": 1000,
+    "description": "查看服务器的运行状态信息、程序日志和系统日志，可通过命令指定查看的日志行数（如：#log100 查看100行日志）"
+} 
